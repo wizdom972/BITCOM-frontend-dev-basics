@@ -5,3 +5,6 @@
     browser: window
 */
 
+global.n = "둘리";
+
+console.log(global.n, n);

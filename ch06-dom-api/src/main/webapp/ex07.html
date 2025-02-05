@@ -1,8 +1,21 @@
 <!DOCTYPE html>
 <html lang="">
 <head>
-	<title>ex07</title>
-	<meta charset="UTF-8">
+<title>ex07</title>
+<meta charset="UTF-8">
+<script>
+	window.onload = function() {
+		setTimeout(function() {
+		    var html = "<h3>반복되는 계절의 중간에 있어</h3>";
+		    
+		    // 전체 바꾸기
+		    // document.body.innerHTML = html;
+		    
+		    // 원래 있던거에 추가하기
+		    document.body.innerHTML = document.body.innerHTML + html;
+		}, 3000);
+	}
+</script>
 </head>
 <body>
 	<h1>DOM(Document Object Model)</h1>

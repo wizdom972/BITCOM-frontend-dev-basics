@@ -1,8 +1,26 @@
 <!DOCTYPE html>
 <html lang="">
 <head>
-	<title>ex09</title>
-	<meta charset="UTF-8">
+<title>ex09</title>
+<meta charset="UTF-8">
+<script>
+	window.onload = function() {
+		setTimeout(function() {
+			// setAttribute/getAttribute
+			// 표준 속성 접근에 사용도 가능
+			// 비표준 속성에 대해 쓰기/읽기위해 사용함
+			
+			var imgElement = document.createElement('img');
+			imgElement.setAttribute('src', '/ch06/plave.jpg');
+			imgElement.setAttribute('alt', 'plave');
+			imgElement.setAttribute('title', 'plave_ingigayo');
+			imgElement.setAttribute('style', 'width: 200px');
+			imgElement.setAttribute('data-no', 10);   // 비표준 속성을 사용할 때는 prefix "data-.." 를 붙인다
+
+			document.body.appendChild(imgElement);
+		}, 3000);
+	}
+</script>
 </head>
 <body>
 	<h1>DOM(Document Object Model)</h1>
